@@ -94,6 +94,9 @@
 }
 
 @media (max-width: 992px) {
+    .tabs-panel__container {
+        height: 800px;
+    }
     .tabs-panel__banner {
         padding-right: 20px;
     }
@@ -108,5 +111,20 @@
     .tabs-panel__content {
         display: block;
         padding-left: 20px;
+    }
+}
+
+@media (max-width: 510px) {
+    .tabs-panel__container {
+        height: 900px;
+    }
+    .tabs-panel__title {
+        align-items: center;
+        padding: 10px 100px 10px 50px;
+        margin-left: 70px !important;
+    }
+    .tabs-panel__content {
+        display: block;
+        padding-right: 100px;
     }
 }
