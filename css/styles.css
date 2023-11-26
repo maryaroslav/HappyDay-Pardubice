@@ -98,11 +98,12 @@ body {
 
 .header__menu {
     flex: 1 1 auto;
+    z-index: 100;
 }
 
 .header__button {
     position: relative;
-    z-index: 5;
+    z-index: 100;
     flex: 0 0 252px;
     display: flex;
     justify-content: flex-end;
