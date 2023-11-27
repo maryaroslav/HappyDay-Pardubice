@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:700,800&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Rubik:regular,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,600,700,800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,regular,600,700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/cart.css">
     <title>HappyDay Pardubice</title>
 </head>
 <body>
@@ -21,7 +21,7 @@
                         <ul class="menu__list">
                             <li class="menu__item"><a href="index.html" class="menu__link">HOME</a></li>
                             <li class="menu__item"><a href="tickets.html" class="menu__link">VSTUPENKY</a></li>    
-                            <li class="menu__item"><a href="cart.html" class="menu__link">KOŠÍK</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">KOŠÍK</a></li>
                             <li class="menu__item"><a href="" class="menu__link">INFORMACE</a></li>
                         </ul>
                     </nav>
@@ -34,28 +34,86 @@
             </div>
         </header>
         <main class="main">
-            <div class="login__container">
-                <div class="center">
-                    <div class="center__title">
-                        <h1>Přihlášení</h1>
-                    </div>  
-                    <form method="post">
-                    <div class="txt_field">
-                        <input type="text" required>
-                        <span></span>
-                        <label>E-mail</label>
+            <div class="carts-steps__container">
+                <div class="carts-steps__column">
+                    <div class="column">
+                        <h2 class="carts-steps__title steps-one__title">Košík</h2>
+                        <span class="circle steps-one">1</span>
                     </div>
-                    <div class="txt_field">
-                        <input type="password" required>
-                        <span></span>
-                        <label>Heslo</label>
+                    <div class="column">
+                        <h2 class="carts-steps__title">Osobní údaje</h2>
+                        <span class="circle">2</span>
                     </div>
-                    <div class="pass">Zapomněli jste své heslo?</div>
-                        <input type="submit" value="Přihlásit se" >
-                    <div class="signup_link">
-                        Nejste zákazník? <a href="#">Registrace</a>
+                    <div class="column">
+                        <h2 class="carts-steps__title">Shrnutí a doprava</h2>
+                        <span class="circle">3</span>
                     </div>
-                    </form>
+                    <div class="column">
+                        <h2 class="carts-steps__title">Platba</h2>
+                        <span class="circle">4</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs-cart__container">
+                <div class="tabs-cart__columns">
+                    <table class="tabs-cart">
+                        <thead>
+                            <tr>
+                                <th class="text-left">Název</th>
+                                <th class="text-center">Ks</th>
+                                <th class="text-right">Sleva</th>
+                                <th class="text-right">Cena za kus</th>
+                                <th class="text-right">Celkem</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="tabs-cart__desc text-left data-th="Název: ">
+                                        <strong>
+                                            Vodní svět - CELÝ DEN
+                                        </strong>
+                                        <br>
+                                        <small>1x Studenti</small>
+                                    </div>
+                                </td>
+                                <td>
+                                    <form>
+                                        <div class="tabs-cart__counter text-center">
+                                            <button type="button" class="counter__button button-left" onclick="decrement()">-</button>
+                                            <input type="submit"  value="1" min="0" max="100" class="counter__input" readonly>
+                                            <button type="button" class="counter__button button-right" onclick="increment()">+</button>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td></td>
+                                <td class="text-right">
+                                    <h3 class="price">949 Kč</h3>
+                                </td>
+                                <td class="text-right">
+                                    <h3 class="price">949 Kč</h3>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="cart__summary__container">
+                    <p class="cart__summary-text">
+                        Celkem bez DPH: 
+                        <span class="cart__summary-discounted">862,74 Kč</span>
+                        <br>
+                        <span class="cart__summary__dph-10">
+                            DPH 10%:
+                            <span class="cart__summary__dph">86,26 Kč</span>
+                        </span>
+                        <br>
+                    </p>
+                    <p class="cart__summary__price"> 
+                        <span class="cart__summary-price__text">Celkem k úhradě:
+                            <span class="cart__summary-price">949,00 Kč</span>
+                        </span>
+                    </p>
+                    <button type="submit" name="submit" class="cart__summary-button">Pokračovat</button>
                 </div>
             </div>
         </main>
