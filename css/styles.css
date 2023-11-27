@@ -316,8 +316,6 @@ body {
     margin: 0px 0px 25px 0px;
 }
 
-.block-text__button {
-}
 @media (max-width: 767px){
     .block-text__title {
         font-size: 34px;

@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:700,800&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Rubik:regular,700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/tickets.css">
+    <link rel="stylesheet" href="css/login.css">
     <title>HappyDay Pardubice</title>
 </head>
 <body>
@@ -20,7 +20,7 @@
                     <nav class="menu__body">
                         <ul class="menu__list">
                             <li class="menu__item"><a href="index.html" class="menu__link">HOME</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">VSTUPENKY</a></li>    
+                            <li class="menu__item"><a href="tickets.html" class="menu__link">VSTUPENKY</a></li>    
                             <li class="menu__item"><a href="" class="menu__link">KOŠÍK</a></li>
                             <li class="menu__item"><a href="" class="menu__link">INFORMACE</a></li>
                         </ul>
@@ -34,94 +34,28 @@
             </div>
         </header>
         <main class="main">
-            <div class="tabs-panel__container">
-                <a href="" class="tabs-panel__banner">
-                    <h3 class="tabs-panel__title">TIP: Ušetřete min. 100Kč</h3>
-                    <p class="tabs-panel__text">
-                        Při koupi vstupenky na našem e-shopu platí cena uvedená pro Po-Pá i o víkendu a svátku. <br>
-                        Vstupenky začínají platit po 2 hodinách od zakoupení.
-                    </p>
-                </a>
-                <div class="tabs-panel__content">
-                    <div class="tabs-panel__table-left">
-                        <table class="table-left">
-                            <thead>
-                                <tr>
-                                    <th class="table-left__row text-left">
-                                        <h3 class="table__text">Všední dny</h3>
-                                    </th>
-                                    <th class="table-left__row">
-                                        <h3 class="table__text text-center">3 hodiny</h3>
-                                    </th>
-                                    <th class="table-left__row">
-                                        <h3 class="table_text text-center">Celý den</h3>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th class="table-left__column radius-right-up">Dítě</th>
-                                    <td class="text__price text-center">699 Kč</td>
-                                    <td class="text__price text-center radius-left-up">799 Kč</td>
-                                </tr>
-                                <tr>
-                                    <th class="table-left__column">Student / Senior</th>
-                                    <td class="text__price text-center">849 Kč</td>
-                                    <td class="text__price text-center">949 Kč</td>
-                                </tr>
-                                <tr>
-                                    <th class="table-left__column">Dospělý</th>
-                                    <td class="text__price text-center">949 Kč</td>
-                                    <td class="text__price text-center">1049 Kč</td>
-                                </tr>
-                                <tr>
-                                    <th class="table-left__column radius-right-down">Rodina</th>
-                                    <td class="text__price text-center">2399 Kč</td>
-                                    <td class="text__price text-center radius-left-down">2599 Kč</td>
-                                </tr>
-                            </tbody>
-                        </table>
+            <div class="login__container">
+                <div class="center">
+                    <div class="center__title">
+                        <h1>Přihlášení</h1>
+                    </div>  
+                    <form method="post">
+                    <div class="txt_field">
+                        <input type="text" required>
+                        <span></span>
+                        <label>E-mail</label>
                     </div>
-                    
-                    <div class="tabs-panel__table-right">
-                        <table class="table-right">
-                            <thead>
-                                <tr>
-                                    <th class="table-left__row text-left">
-                                        <h3 class="table__text">Víkendy, svátky, prázdniny</h3>
-                                    </th>
-                                    <th class="table-left__row">
-                                        <h3 class="table__text text-center">3 hodiny</h3>
-                                    </th>
-                                    <th class="table-left__row">
-                                        <h3 class="table_text text-center">Celý den</h3>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th class="table-left__column radius-right-up">Dítě</th>
-                                    <td class="text__price text-center">799 Kč</td>
-                                    <td class="text__price text-center radius-left-up">899 Kč</td>
-                                </tr>
-                                <tr>
-                                    <th class="table-left__column">Student / Senior</th>
-                                    <td class="text__price text-center">949 Kč</td>
-                                    <td class="text__price text-center">1049 Kč</td>
-                                </tr>
-                                <tr>
-                                    <th class="table-left__column">Dospělý</th>
-                                    <td class="text__price text-center">1049 Kč</td>
-                                    <td class="text__price text-center">1149 Kč</td>
-                                </tr>
-                                <tr>
-                                    <th class="table-left__column radius-right-down">Rodina</th>
-                                    <td class="text__price text-center">2699 Kč</td>
-                                    <td class="text__price text-center radius-left-down">2899 Kč</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="txt_field">
+                        <input type="password" required>
+                        <span></span>
+                        <label>Heslo</label>
                     </div>
+                    <div class="pass">Zapomněli jste své heslo?</div>
+                        <input type="submit" value="Přihlásit se" >
+                    <div class="signup_link">
+                        Nejste zákazník? <a href="#">Registrace</a>
+                    </div>
+                    </form>
                 </div>
             </div>
         </main>
