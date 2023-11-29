@@ -101,16 +101,25 @@
 }
 
 @media (max-width: 767px) {
+    .tabs-panel__container {
+        padding: 150px 150px 64px 150px;
+    }
 
     .tabs-panel__content {
         display: block;
         padding-left: 20px;
+    }
+    .tabs-panel__title {
+        align-items: center;
+        padding: 10px 100px 10px 50px;
+        margin-left: 70px !important;
     }
 }
 
 @media (max-width: 510px) {
     .tabs-panel__container {
         height: 900px;
+        padding: 150px 0px 64px 5px;
     }
     .tabs-panel__title {
         align-items: center;
@@ -119,6 +128,6 @@
     }
     .tabs-panel__content {
         display: block;
-        padding-right: 100px;
+        /* padding-right: 100px; */
     }
 }

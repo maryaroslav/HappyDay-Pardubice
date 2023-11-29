@@ -10,10 +10,15 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
-    background: rgba(30, 162, 238, 0.61);
+    background: #1ea2eed0;
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
 }
+
+.center__title {
+  /* background-color: #14008F; */
+}
+
 .center h1{
     text-align: center;
     padding: 20px 0;
