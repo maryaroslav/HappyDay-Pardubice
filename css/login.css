@@ -4,7 +4,7 @@
     height: 500px;
 }
 
-.center{
+.center {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -15,29 +15,29 @@
     box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
 }
 
-.center__title {
-  /* background-color: #14008F; */
-}
-
-.center h1{
+.center h1 {
     text-align: center;
     padding: 20px 0;
     border-bottom: 1px solid black;
 }
+
 h1 {
     color: #000;
     font-size: 20px;
     font-style: 800;
 }
+
 .center form{
   padding: 0 40px;
   box-sizing: border-box;
 }
+
 form .txt_field{
   position: relative;
   border-bottom: 1px solid #000;
   margin: 30px 0;
 }
+
 .txt_field input{
   width: 100%;
   padding: 0 5px;
@@ -47,6 +47,7 @@ form .txt_field{
   background: none;
   outline: none;
 }
+
 .txt_field label{
   position: absolute;
   top: 50%;
@@ -57,6 +58,7 @@ form .txt_field{
   pointer-events: none;
   transition: .5s;
 }
+
 .txt_field span::before{
   content: '';
   position: absolute;
@@ -67,24 +69,29 @@ form .txt_field{
   background: #2691d9;
   transition: .5s;
 }
+
 .txt_field input:focus ~ label,
 .txt_field input:valid ~ label{
   top: -5px;
   color: #2691d9;
 }
+
 .txt_field input:focus ~ span::before,
 .txt_field input:valid ~ span::before{
   width: 100%;
 }
-.pass{
+
+.pass {
   margin: -5px 0 20px 5px;
   color: #000;
   cursor: pointer;
 }
-.pass:hover{
+
+.pass:hover {
   text-decoration: underline;
 }
-input[type="submit"]{
+
+input[type="submit"] {
   width: 100%;
   height: 50px;
   border: none;
@@ -97,20 +104,24 @@ input[type="submit"]{
   outline: none;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 input[type="submit"]:hover{
     background-color: #2978f7;
     color: #fff;
 }
-.signup_link{
+
+.signup_link {
   margin: 30px 0;
   text-align: center;
   font-size: 16px;
   color: #000;
 }
-.signup_link a{
+
+.signup_link a {
   color: #2691d9;
   text-decoration: none;
 }
-.signup_link a:hover{
+
+.signup_link a:hover {
   text-decoration: underline;
 }
